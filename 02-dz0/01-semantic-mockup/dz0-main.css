@@ -1,0 +1,37 @@
+* {
+    color: white;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: red;
+    text-align: center;
+}
+
+article {
+    background-color: blue;
+    padding: 10px 5px 10px 5px;
+}
+
+nav {
+    background-color: orange;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    font-size: large;
+    padding: 0px 10px 0px 0px;
+}
+
+footer {
+    background-color: purple;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    background-color: green;
+    padding: 10px;
+}
