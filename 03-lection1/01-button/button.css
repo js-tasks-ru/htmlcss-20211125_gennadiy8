@@ -1,1 +1,77 @@
-/* Стилизация кнопки */
+/* TODO: Кажется такие импорты незаконны, то есть дочерний компонент, не должен знать про родителя.
+Но мне как-то надо достучаться до root. Не совсем понятно как быть. */
+@import url("../../assets/css/main.css");
+
+/* TODO: Нужно ли тут переменные для ширины, высоты и тд делать. Так как это в рамках кнопки, то не стал.  */
+.button {
+    border-radius: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    padding-top: 15px;
+    padding-bottom: 14px;
+    width: 189px;
+    height: 48px;
+}
+
+/* TODO: не совсем понимаю, как это можно сократить. Кажется много дублирования. Спросить у преподавателя. */
+
+.button-primary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.button-secondary {
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.button-alternate {
+    background-color: var(--alternate);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    color: var(--grey-4);
+}
+
+.button-primary:hover {
+    background-color: var(--primary-hovered);
+    cursor: pointer;
+    transition: opacity 300ms ease-in-out, background 300ms ease-in-out;
+}
+
+.button-secondary:hover {
+    background-color: var(--secondary-hovered);
+    cursor: pointer;
+    transition: opacity 300ms ease-in-out, background 300ms ease-in-out;
+}
+
+.button-alternate:hover {
+    background-color: var(--alternate);
+    border: 1px solid var(--black);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: opacity 300ms ease-in-out, border 300ms ease-in-out;
+}
+
+.button-primary:disabled {
+    background-color: var(--primary);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.button-secondary:disabled {
+    background-color: var(--secondary);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.button-alternate:disabled {
+    background-color: var(--alternate);
+    border: 1px solid var(--grey-3);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
