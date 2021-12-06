@@ -1,8 +1,5 @@
-/* TODO: Кажется такие импорты незаконны, то есть дочерний компонент, не должен знать про родителя.
-Но мне как-то надо достучаться до root. Не совсем понятно как быть. */
 @import url("../../assets/css/main.css");
 
-/* TODO: Нужно ли тут переменные для ширины, высоты и тд делать. Так как это в рамках кнопки, то не стал.  */
 .button {
     border-radius: 8px;
     font-family: Roboto;
@@ -16,62 +13,66 @@
     padding-bottom: 14px;
     width: 189px;
     height: 48px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: opacity 300ms ease-in-out, background-color 300ms ease-in-out, border 300ms ease-in-out;
+
+    --alternate-border-color: var(--grey-3);
+    --alternate-border-color-hovered: var(--black);
+    --alternate-border-color-disabled: var(--grey-3);
+    --alternate-color: var(--grey-4);
+
 }
+
 
 /* TODO: не совсем понимаю, как это можно сократить. Кажется много дублирования. Спросить у преподавателя. */
 
-.button-primary {
+.button_primary {
     background-color: var(--primary);
     border: 1px solid var(--primary);
 }
 
-.button-secondary {
+.button_secondary {
     background-color: var(--secondary);
     border: 1px solid var(--secondary);
 }
 
-.button-alternate {
+.button_alternate {
     background-color: var(--alternate);
-    border: 1px solid var(--grey-3);
-    box-sizing: border-box;
-    color: var(--grey-4);
+    border: 1px solid var(--alternate-border-color);
+    color: var(--alternate-color);
 }
 
-.button-primary:hover {
+.button_primary:hover {
     background-color: var(--primary-hovered);
-    cursor: pointer;
-    transition: opacity 300ms ease-in-out, background 300ms ease-in-out;
+    border: 1px solid var(--primary-hovered);
 }
 
-.button-secondary:hover {
+.button_secondary:hover {
     background-color: var(--secondary-hovered);
-    cursor: pointer;
-    transition: opacity 300ms ease-in-out, background 300ms ease-in-out;
+    border: 1px solid var(--secondary-hovered);
 }
 
-.button-alternate:hover {
+.button_alternate:hover {
     background-color: var(--alternate);
-    border: 1px solid var(--black);
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: opacity 300ms ease-in-out, border 300ms ease-in-out;
+    border: 1px solid var(--alternate-border-color-hovered);
 }
 
-.button-primary:disabled {
-    background-color: var(--primary);
+.button_primary:disabled {
     cursor: not-allowed;
+    pointer-events: none;
     opacity: 0.5;
 }
 
-.button-secondary:disabled {
-    background-color: var(--secondary);
+.button_secondary:disabled {
     cursor: not-allowed;
+    pointer-events: none;
     opacity: 0.5;
 }
 
-.button-alternate:disabled {
-    background-color: var(--alternate);
-    border: 1px solid var(--grey-3);
+.button_alternate:disabled {
+    border: 1px solid var(--alternate-border-color-disabled);
     cursor: not-allowed;
+    pointer-events: none;
     opacity: 0.5;
 }

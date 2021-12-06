@@ -1,7 +1,6 @@
 @import './reset.css';
 @import '../fonts/fonts.css';
 
-/* TODO: немного доработал цвета, не совпадали с фигмой. Законно ли это?*/
 :root {
     --white: #ffffff;
     --black: #212429;
