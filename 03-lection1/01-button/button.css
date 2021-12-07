@@ -41,17 +41,17 @@
 
 .button_primary:hover {
     background-color: var(--primary-hovered);
-    border: 1px solid var(--primary-hovered);
+    border-color: var(--primary-hovered);
 }
 
 .button_secondary:hover {
     background-color: var(--secondary-hovered);
-    border: 1px solid var(--secondary-hovered);
+    border-color:var(--secondary-hovered);
 }
 
 .button_alternate:hover {
     background-color: var(--alternate);
-    border: 1px solid var(--alternate-frame-hovered);
+    border-color: var(--alternate-frame-hovered);
 }
 
 .button_primary:disabled {
