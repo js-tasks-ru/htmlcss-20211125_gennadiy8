@@ -1,6 +1,6 @@
-@import url("../../assets/css/main.css");
-
 .header {
+    --header-title: var(--black);
+
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -9,8 +9,6 @@
 
     background: var(--white);
     padding: 96px 0 77px;
-
-    --header-title: var(--black);
 }
 
 .header__title {
@@ -18,6 +16,6 @@
 }
 
 .header__box {
-    max-width: var(--page-box);
+    max-width: var(--page-box-width);
     margin: 0 auto;
 }

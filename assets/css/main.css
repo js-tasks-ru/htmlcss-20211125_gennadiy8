@@ -19,14 +19,13 @@
     --primary: var(--blue);
     --secondary: var(--purple);
 
-    --page-box: 1110px;
+    --page-box-width: 1110px;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
 }
 
-/*INFO: интересный подход, надо запомнить, без него блоки(main, header, footer) не растягиваются на высоту страницы.*/
 html, body {
     height: 100%;
 }
