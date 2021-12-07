@@ -1,0 +1,23 @@
+@import url("../../assets/css/main.css");
+
+.header {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+
+    background: var(--white);
+    padding: 96px 0 77px;
+
+    --header-title: var(--black);
+}
+
+.header__title {
+    color: var(--header-title);
+}
+
+.header__box {
+    max-width: var(--page-box);
+    margin: 0 auto;
+}
