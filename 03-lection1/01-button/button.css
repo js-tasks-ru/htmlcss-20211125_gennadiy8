@@ -1,5 +1,3 @@
-@import url("../../assets/css/main.css");
-
 .button {
     border-radius: 8px;
     font-family: Roboto;
@@ -21,6 +19,12 @@
     --alternate-frame-hovered: var(--black);
     --alternate-frame-disabled: var(--grey-3);
     --alternate-color: var(--grey-4);
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.5;
 }
 
 .button_primary {
@@ -54,21 +58,6 @@
     border-color: var(--alternate-frame-hovered);
 }
 
-.button_primary:disabled {
-    cursor: not-allowed;
-    pointer-events: none;
-    opacity: 0.5;
-}
-
-.button_secondary:disabled {
-    cursor: not-allowed;
-    pointer-events: none;
-    opacity: 0.5;
-}
-
 .button_alternate:disabled {
     border: 1px solid var(--alternate-frame-disabled);
-    cursor: not-allowed;
-    pointer-events: none;
-    opacity: 0.5;
 }

@@ -1,5 +1,3 @@
-@import url("../../assets/css/main.css");
-
 .accordion {
     font-family: Inter;
     font-style: normal;
@@ -49,6 +47,5 @@
 }
 
 .accordion__item[open] {
-    width: 730px;
     height: 144px;
 }
