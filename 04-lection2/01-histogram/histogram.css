@@ -1,25 +1,23 @@
-@import url("../../assets/css/main.css");
-
 .histogram {
+    --blue-color-custom-1: #4263EB;
+
+    --histogram-width: 354px;
+    --histogram-height: 185px;
+    --histogram-chart-item-color: var(--blue-color-custom-1);
+
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
 
     padding: 16px 24px 24px 24px;
 
-    width: var(--histogram-width);
+    max-width: var(--histogram-width);
     height: var(--histogram-height);
 
     background: var(--white);
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
-
-    --blue-color-custom-1: #4263EB;
-
-    --histogram-width: 354px;
-    --histogram-height: 185px;
-    --histogram-chart-item-color: var(--blue-color-custom-1);
 }
 
 .histogram__container {
@@ -36,18 +34,17 @@
 .histogram__header-stat-box {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .histogram__view-link {
-    flex-grow: 1;
-
     font-size: 16px;
     line-height: 24px;
 
-    width: 59px;
     height: 24px;
+    white-space: nowrap;
 
-    text-align: right;
+    justify-self: flex-end;
     color: var(--blue-color-custom-1);
 }
 
@@ -77,6 +74,7 @@
 }
 
 .histogram__chart-item {
-    width: 9px;
+    flex-basis: 9px;
+    flex-grow: 1;
     background: var(--histogram-chart-item-color);
 }
