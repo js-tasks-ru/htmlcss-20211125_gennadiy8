@@ -1,34 +1,6 @@
-/* TODO: не знаю как лучше их назвать*/
-
-.inter-paragraph-20w {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-}
-
-.inter-paragraph-14 {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.source-sans-paragraph-16 {
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-}
-
 .calendar {
-
     --calendar-item-color: #334D6E;
     --calendar-selected-item-color: #4263EB;
-    --calendar-selected-range-items-color: #A0B1F5;
 
     background: var(--white);
     border: 1px solid var(--grey-3);
@@ -50,6 +22,12 @@
     justify-content: center;
 
     color: var(--calendr-item-color);
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .calendar__inner {
@@ -70,6 +48,12 @@
 
     text-align: center;
     color: var(--calendr-item-color);
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .calendar__item_day {
@@ -78,6 +62,12 @@
     text-align: center;
 
     color: var(--grey-3);
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .calendar__item_start, .calendar__item_end {
@@ -87,8 +77,7 @@
 }
 
 .calendar__item_between {
-    background: var(--calendar-selected-range-items-color);
-    opacity: 0.2;
+    background: rgb(160, 177, 245, 0.2);
     text-align: center;
     color: var(--calendar-item-color);
 }
