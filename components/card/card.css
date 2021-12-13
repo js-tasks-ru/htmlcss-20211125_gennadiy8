@@ -1,0 +1,36 @@
+.card {
+    --card-width: 350px;
+    --card-height: 367px;
+    --card-corner: 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+
+    background: var(--white);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: var(--card-corner);
+    width: var(--card-width);
+    height: var(--card-height);
+}
+
+.card__body-frame { 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card__body-element { 
+    margin: auto;
+}
+
+.card__footer { 
+    text-align: center;
+    color: var(--black);
+    padding: 30px;
+}
