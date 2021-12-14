@@ -1,0 +1,19 @@
+.preview {
+    --preview-fon: #F9FAFC;
+    --preview-top-indent: 68px;
+    --preview-gap-between-cards: 30px;
+
+    flex-grow: 1;
+    background: var(--preview-fon);
+    padding-top: var(--preview-top-indent);
+}
+
+.preview__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--preview-gap-between-cards);
+
+    max-width: var(--page-box-width);
+    margin: 0 auto;
+}
