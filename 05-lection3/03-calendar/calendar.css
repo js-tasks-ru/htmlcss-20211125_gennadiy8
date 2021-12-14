@@ -1,7 +1,4 @@
 .calendar {
-    --calendar-item-color: #334D6E;
-    --calendar-selected-item-color: #4263EB;
-
     background: var(--white);
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
@@ -21,7 +18,7 @@
     align-items: flex-end;
     justify-content: center;
 
-    color: var(--calendr-item-color);
+    color: var(--blue-2);
 
     font-family: Inter;
     font-style: normal;
@@ -71,7 +68,7 @@
 }
 
 .calendar__item_start, .calendar__item_end {
-    background: var(--calendar-selected-item-color);
+    background: var(--blue-1);
     text-align: center;
     color: var(--white);
 }
@@ -79,5 +76,5 @@
 .calendar__item_between {
     background: rgb(160, 177, 245, 0.2);
     text-align: center;
-    color: var(--calendar-item-color);
+    color: var(--blue-2);
 }
