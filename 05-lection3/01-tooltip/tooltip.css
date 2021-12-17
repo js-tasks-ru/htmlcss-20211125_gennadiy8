@@ -8,7 +8,7 @@
     display: none;
 
     position: absolute;
-    top: 100%;
+    bottom: 100%;
     left: 50%;
 
     color: var(--grey-2);
@@ -25,7 +25,7 @@
 
     padding: 13px 21px 8px;
 
-    transform: translate(-50%, -147%); /* TODO: 147 - костыль, если текст изменится в div, это собъется*/
+    transform: translate(-50%, -8px);
 }
 
 .tooltip__bubble:after {
