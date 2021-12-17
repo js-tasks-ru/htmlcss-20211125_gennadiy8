@@ -5,30 +5,47 @@
     <link rel="stylesheet" href="../components/preview/preview.css">
     <link rel="stylesheet" href="../components/card/card.css">
     <link rel="stylesheet" href="../components/page/page.css">
+    <link rel="stylesheet" href="../components/controls/controls.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <div class="page">
+    <div class="template">
         <header class="header">
-            <div class="header__box"></div>
+            <div class="header__box">
+                <svg class="header__logo">
+                    <use href="../assets/icon/sprite.svg#logo"> </use>
+                </svg>
+                <!-- something -->
+            </div>
         </header>
 
-        <main class="controls">
-            <aside class="controls__sidebar">
-                <nav class="controls__navigation">
-                    <header class="controls__title"> Components </header>
+        <main class="main">
+            <aside class="sidebar">
+                <nav class="controls">
+                    <header class="controls__title">
+                        Components
+                    </header>
+                    <ul class="controls__list">
+                        <li class="controls__item">Modal</li>
+                        <li class="controls__item">Tooltip</li>
+                        <li class="controls__item">Avatar</li>
+                        <li class="controls__item">Calendar</li>
+                        <li class="controls__item controls__item_selected">Histogram</li>
+                        <li class="controls__item">Custom form elements</li>
+                    </ul>
+                </nav>
+
+                <nav class="site-navigation">
                     <ul>
-                        <li>Modal</li>
-                        <li>Tooltip</li>
-                        <li>Avatar</li>
-                        <li>Calendar</li>
-                        <li>Histogram</li>
-                        <li>Custom form elements</li>
+                        <li class="site-navigation__link-to-main-page">Main page</li>
                     </ul>
                 </nav>
             </aside>
 
-            <div class="controls__control-view">
+            <div class="controls__viewer">
+                some control
             </div>
         </main>
 

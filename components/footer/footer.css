@@ -31,3 +31,9 @@
     text-align: center;
     color: var(--footer-description);
 }
+
+@media screen and (max-width: 1140px) {
+    .footer {
+        display: none;
+    }
+}

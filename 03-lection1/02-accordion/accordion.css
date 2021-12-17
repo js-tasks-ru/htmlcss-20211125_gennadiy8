@@ -49,3 +49,29 @@
 .accordion__item[open] {
     height: 144px;
 }
+
+.accordion__spoiler {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 32px;
+}
+
+.accordion__title {
+    flex-grow: 1;
+}
+
+/*
+TODO: что-то не нравится этот методя для выравнивания стрелки по центру
+Из-за этого переворачивается стрелка уродливо.
+Либо мне размеры свг надо правильно задавать, либо флекс не работает с свг.
+*/
+.accordion__arrow {
+    width: 32px;
+    height: 32px;
+    transform: translate(72%, 30%);
+}
+
+.accordion__item[open] .accordion__arrow {
+    transform: rotate(-180deg);
+}
