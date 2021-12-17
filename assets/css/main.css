@@ -24,8 +24,14 @@
 
     --primary-hovered: var(--blue-2);
     --secondary-hovered: var(--purple-2);
+
+    --page-box-width: 1110px;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
 }
