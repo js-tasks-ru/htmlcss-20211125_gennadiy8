@@ -1,0 +1,84 @@
+.checkbox {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.checkbox__input {
+    position: absolute;  /* хитрый хак -скрыть элемент, но чтобы в доме он был */
+    clip: rect(0,0,0,0); /* так как display: none отключит элемент */
+    opacity: 0;
+}
+
+.checkbox__state {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox__control {
+    position: relative;
+
+    display: inline-flex;
+
+    width: 28px;
+    height: 28px;
+
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.checkbox__icon {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    /* fill: var(--white); */
+}
+
+.checkbox__label {
+
+    display: inline-flex;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--grey-4);
+
+    margin: 12px;
+}
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__control {
+    background: var(--blue-1);
+    border-radius: 4px;
+    border-color: var(--blue-1);
+}
+
+
+
+.checkbox__input:focus ~ .checkbox__state .checkbox__label {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.checkbox__input[disabled] ~ .checkbox__state .checkbox__control {
+    cursor: not-allowed;
+
+    background: var(--grey-2);
+    opacity: 0.5;
+}
+
+.checkbox__input[disabled] ~ .checkbox__state .checkbox__control .checkbox__icon {
+    fill: var(--grey-2);
+}
+
+.checkbox__input[disabled] ~ .checkbox__state .checkbox__label {
+    color: var(--grey-2);
+}

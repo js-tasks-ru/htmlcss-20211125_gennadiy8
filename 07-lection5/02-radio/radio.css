@@ -1,0 +1,85 @@
+.radio {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.radio__input {
+    position: absolute;  /* хитрый хак -скрыть элемент, но чтобы в доме он был */
+    clip: rect(0,0,0,0); /* так как display: none отключит элемент */
+    opacity: 0;
+}
+
+.radio__state {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio__control {
+    position: relative;
+
+    display: inline-flex;
+
+    width: 28px;
+    height: 28px;
+
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.radio__icon {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    fill: var(--white);
+}
+
+.radio__label {
+
+    display: inline-flex;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--grey-4);
+
+    margin: 12px;
+}
+
+.radio__input:checked ~ .radio__state .radio__control {
+    border-radius:  50%;
+    border-color: var(--blue-1);
+}
+
+.radio__input:checked ~ .radio__state .radio__icon {
+    fill: var(--blue-1);
+}
+
+.radio__input:focus ~ .radio__state .radio__label {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.radio__input[disabled] ~ .radio__state .radio__control {
+    cursor: not-allowed;
+
+    background: var(--grey-2);
+    opacity: 0.5;
+}
+
+.radio__input[disabled] ~ .radio__state .radio__control .radio__icon {
+    fill: var(--grey-2);
+}
+
+.radio__input[disabled] ~ .radio__state .radio__label {
+    color: var(--grey-2);
+}
