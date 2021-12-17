@@ -5,26 +5,28 @@
     width: 100%;
 }
 
-@media screen and (min-width: 0) and (max-width: 400px) {
+/*!!! INFO: важен порядок @media для max-width от большего к меньшему иначе работать не будет.*/
+
+@media screen and (max-width: 2560px) {
     .picture {
-        background-image: url("./public/forest_400.jpg");
+        background-image: url("./public/forest_2560.jpg");
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 768px) {
-    .picture {
-        background-image: url("./public/forest_768.jpg");
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .picture {
         background-image: url("./public/forest_1024.jpg");
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 2560px) {
+@media screen and (max-width: 768px) {
     .picture {
-        background-image: url("./public/forest_2560.jpg");
+        background-image: url("./public/forest_768.jpg");
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .picture {
+        background-image: url("./public/forest_400.jpg");
     }
 }
