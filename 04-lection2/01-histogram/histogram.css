@@ -1,0 +1,80 @@
+.histogram {
+    --blue-color-custom-1: #4263EB;
+
+    --histogram-width: 354px;
+    --histogram-height: 185px;
+    --histogram-chart-item-color: var(--blue-color-custom-1);
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+
+    padding: 16px 24px 24px 24px;
+
+    max-width: var(--histogram-width);
+    height: var(--histogram-height);
+
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.histogram__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.histogram__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.histogram__header-stat-box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.histogram__view-link {
+    font-size: 16px;
+    line-height: 24px;
+
+    height: 24px;
+    white-space: nowrap;
+
+    justify-self: flex-end;
+    color: var(--blue-color-custom-1);
+}
+
+.histogram__total-order {
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--black);
+
+    opacity: 0.8;
+}
+
+.histogram__stat-value {
+    font-size: 20px;
+    line-height: 26px;
+
+    color: var(--black);
+}
+
+.histogram__chart-box {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 1px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.histogram__chart-item {
+    flex-basis: 9px;
+    flex-grow: 1;
+    background: var(--histogram-chart-item-color);
+}
