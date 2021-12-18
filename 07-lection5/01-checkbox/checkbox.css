@@ -36,8 +36,6 @@
     left: 50%;
 
     transform: translate(-50%, -50%);
-
-    /* fill: var(--white); */
 }
 
 .checkbox__label {
@@ -52,12 +50,11 @@
 
     color: var(--grey-4);
 
-    margin: 12px;
+    margin-left: 12px;
 }
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
     background: var(--blue-1);
-    border-radius: 4px;
     border-color: var(--blue-1);
 }
 

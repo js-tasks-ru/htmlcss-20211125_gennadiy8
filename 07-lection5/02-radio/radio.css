@@ -52,11 +52,10 @@
 
     color: var(--grey-4);
 
-    margin: 12px;
+    margin-left: 12px;
 }
 
 .radio__input:checked ~ .radio__state .radio__control {
-    border-radius:  50%;
     border-color: var(--blue-1);
 }
 

@@ -50,17 +50,16 @@
 
     color: var(--grey-4);
 
-    margin: 12px;
+    margin-left: 12px;
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__control {
     background: var(--blue-1);
-    border-radius: 16px;
     border-color: var(--blue-1);
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__control .toggler__icon {
-    transform: translate(23px);
+    transform: translateX(23px);
     fill: var(--white);
 }
 
