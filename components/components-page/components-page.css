@@ -1,0 +1,11 @@
+.components-page {
+    --sidebar-width: 229px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 56px;
+
+    padding: 35px 165px;
+
+    background: var(--white-1);
+}

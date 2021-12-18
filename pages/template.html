@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="../components/preview/preview.css">
     <link rel="stylesheet" href="../components/card/card.css">
     <link rel="stylesheet" href="../components/page/page.css">
-    <link rel="stylesheet" href="../components/controls/controls.css">
+    <link rel="stylesheet" href="../components/components-page/components-page.css">
+    <link rel="stylesheet" href="../components/sidebar/sidebar.css">
+    <link rel="stylesheet" href="../components/component-viewer/component-viewer.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -21,30 +23,31 @@
             </div>
         </header>
 
-        <main class="main">
+        <main class="components-page">
             <aside class="sidebar">
-                <nav class="controls">
-                    <header class="controls__title">
+                <nav class="sidebar__nav">
+                    <header class="sidebar__components-list-title">
                         Components
                     </header>
-                    <ul class="controls__list">
-                        <li class="controls__item">Modal</li>
-                        <li class="controls__item">Tooltip</li>
-                        <li class="controls__item">Avatar</li>
-                        <li class="controls__item">Calendar</li>
-                        <li class="controls__item controls__item_selected">Histogram</li>
-                        <li class="controls__item">Custom form elements</li>
+                    <ul class="sidebar__components-list">
+                        <li class="sidebar__components-list-item">Modal</li>
+                        <li class="sidebar__components-list-item">Tooltip</li>
+                        <li class="sidebar__components-list-item">Avatar</li>
+                        <li class="sidebar__components-list-item">Calendar</li>
+                        <li class="sidebar__components-list-item sidebar__components-list-item_selected">
+                            Histogram</li>
+                        <li class="sidebar__components-list-item">Custom form elements</li>
                     </ul>
                 </nav>
 
-                <nav class="site-navigation">
+                <nav>
                     <ul>
-                        <li class="site-navigation__link-to-main-page">Main page</li>
+                        <li class="sidebar__link-to-main-page">Main page</li>
                     </ul>
                 </nav>
             </aside>
 
-            <div class="controls__viewer">
+            <div class="component-viewer">
                 some control
             </div>
         </main>

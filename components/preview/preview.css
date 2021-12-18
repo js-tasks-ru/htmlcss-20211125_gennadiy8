@@ -1,11 +1,13 @@
 .preview {
     --preview-fon: var(--white-1);
     --preview-top-indent: 68px;
+    --preview-bottom-indent: 15px;
     --preview-gap-between-cards: 30px;
 
     flex-grow: 1;
     background: var(--preview-fon);
     padding-top: var(--preview-top-indent);
+    padding-bottom: var(--preview-bottom-indent);
 }
 
 .preview__box {
