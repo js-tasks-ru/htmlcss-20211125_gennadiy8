@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./components/preview/preview.css">
     <link rel="stylesheet" href="./components/card/card.css">
     <link rel="stylesheet" href="./components/page/page.css">
+    <link rel="stylesheet" href="./components/tabs/tabs.css">
 
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
     <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
@@ -27,6 +28,22 @@
                 <h1 class="header__title"> Reusable component library </h1>
             </div>
         </header>
+
+        <div class="tabs">
+            <div class="tabs__box">
+                <input class="tabs__radio" type="radio" id="#all-tab" name="top-panel" checked>
+                <input class="tabs__radio" type="radio" id="#elements-tab" name="top-panel">
+                <input class="tabs__radio" type="radio" id="#containers-tab" name="top-panel">
+                <input class="tabs__radio" type="radio" id="#template-tab" name="top-panel">
+
+                <div class="tabs__scroller">
+                    <label class="tabs__item" for="#all-tab">All components</label>
+                    <label class="tabs__item" for="#elements-tab">Elements</label>
+                    <label class="tabs__item" for="#containers-tab">Containers</label>
+                    <label class="tabs__item" for="#template-tab">Templates</label>
+                </div>
+            </div>
+        </div>
 
         <main class="preview">
             <div class="preview__box">
