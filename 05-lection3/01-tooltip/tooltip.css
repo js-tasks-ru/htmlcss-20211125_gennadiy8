@@ -25,7 +25,7 @@
 
     padding: 13px 21px 8px;
 
-    transform: translate(-50%, -8px);
+    transform: translate(-50%, -20px);
 }
 
 .tooltip__bubble:after {
@@ -34,16 +34,16 @@
     top: 100%;
     left: 50%; 
     border: 14px solid transparent;
-    border-top: 6px solid var(--blue-1); /* TODO: при разном масштабировании в браузере появлятся линия белая между треугольником и баблом*/
+    border-top: 6px solid var(--blue-1);
     transform: translateX(-50%);
 }
 
-
 .tooltip__icon {
     cursor: pointer;
+    width: 22px;
+    height: 22px;
 }
 
-/* TODO: при наведении мерцает, не понятно почему так. */
 .tooltip__icon:hover ~ .tooltip__bubble {
     display: inline-block;
 }
