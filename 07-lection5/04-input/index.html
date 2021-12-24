@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+</head>
+
+<body>
+    <label class="textbox">
+        <p class="textbox__caption"> label </p>
+        <input class="textbox__input textbox__input_default" type="text" placeholder="placeholder">
+    </label>
+
+    <label class="textbox">
+        <p class="textbox__caption"> focus </p>
+        <input class="textbox__input textbox__input_default" autofocus type="text" value="filled input">
+    </label>
+
+    <label class="textbox">
+        <p class="textbox__caption"> success </p>
+        <input class="textbox__input textbox__input_success" type="text" value="some text">
+    </label>
+
+    <label class="textbox">
+        <p class="textbox__caption"> error </p>
+        <input class="textbox__input textbox__input_invalid" type="text" value="some error">
+    </label>
+</body>
+
 </html>
