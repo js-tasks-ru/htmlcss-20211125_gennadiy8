@@ -24,10 +24,27 @@
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
-    align-items: center;
 }
 
-.card__body-element { 
+.card__histogram { 
+    padding: 0px 25px;
+}
+
+.card__avatar { 
+    padding: 58px 95px;
+    margin: auto;
+}
+
+.card__calendar { 
+    padding: 32px 74px;
+    margin: auto;
+}
+
+.card__tooltip { 
+    padding: 159px 164px;
+}
+
+.card__modal { 
     padding: 0px 25px;
 }
 

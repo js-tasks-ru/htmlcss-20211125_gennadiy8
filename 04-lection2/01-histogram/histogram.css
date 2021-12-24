@@ -79,6 +79,28 @@
     background: var(--histogram-chart-item-color);
 }
 
+.histogram__card_size {
+    --blue-color-custom-1: #4263EB;
+
+    --histogram-width: 300px;
+    --histogram-height: 157px;
+    --histogram-chart-item-color: var(--blue-color-custom-1);
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+
+    padding: 16px 24px 24px 24px;
+
+    max-width: var(--histogram-width);
+    height: var(--histogram-height);
+
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 1140px) {
     .histogram {
         width: 300px;

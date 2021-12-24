@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
     <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
     <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
+    <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
+    <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -49,8 +51,26 @@
             <div class="preview__box">
                 <article class="card">
                     <main class="card__body-frame">
-                        <div class="card__body-element">
-                            view
+                        <div class="card__tooltip">
+                            <div class="tooltip">
+                                <div class="tooltip__icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2ZM0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11Z"
+                                            fill="#212429" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.2581 7.02432C10.7926 6.94447 10.3138 7.03195 9.90663 7.27126C9.49943 7.51058 9.19006 7.88629 9.03333 8.33184C8.85006 8.85283 8.27914 9.12661 7.75815 8.94333C7.23716 8.76006 6.96339 8.18915 7.14666 7.66816C7.46013 6.77705 8.07886 6.02563 8.89327 5.547C9.70767 5.06837 10.6652 4.89341 11.5962 5.05311C12.5273 5.2128 13.3717 5.69686 13.9801 6.41953C14.5883 7.14205 14.9213 8.05648 14.92 9.00091C14.9195 10.5313 13.7849 11.5419 12.9747 12.082C12.5391 12.3725 12.1105 12.586 11.7949 12.7263C11.6356 12.7971 11.5015 12.8508 11.4049 12.8876C11.3565 12.906 11.3173 12.9203 11.2887 12.9305L11.254 12.9427L11.2429 12.9464L11.239 12.9478L11.2375 12.9483C11.2372 12.9484 11.2362 12.9487 10.92 12L11.2362 12.9487C10.7123 13.1233 10.146 12.8402 9.97131 12.3162C9.79678 11.7926 10.0794 11.2267 10.6027 11.0517L10.6014 11.0521C10.6015 11.0521 10.6016 11.052 10.6027 11.0517L10.6187 11.0461C10.6341 11.0406 10.6593 11.0314 10.6929 11.0186C10.7603 10.9929 10.8606 10.9529 10.9826 10.8987C11.2294 10.789 11.5509 10.6275 11.8653 10.4179C12.5549 9.95822 12.92 9.46913 12.92 9L12.92 8.99851C12.9207 8.52619 12.7542 8.06886 12.45 7.70753C12.1459 7.34619 11.7236 7.10417 11.2581 7.02432Z"
+                                            fill="#212429" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11 14C11.5523 14 12 14.4477 12 15V15.5C12 16.0523 11.5523 16.5 11 16.5C10.4477 16.5 10 16.0523 10 15.5V15C10 14.4477 10.4477 14 11 14Z"
+                                            fill="#212429" />
+                                    </svg>
+                                </div>
+                                <div class="tooltip__bubble" style="display: inline-block;">
+                                    Helper text
+                                </div>
+                            </div>
                         </div>
                     </main>
                     <footer class="card__footer">Tooltip</footer>
@@ -67,54 +87,79 @@
 
                 <article class="card">
                     <main class="card__body-frame">
-                        <div class="card__body-element">
-                            <div class="calendar">
-                                <div class="calendar__title"> October 2019 </div>
+                        <div class="card__calendar">
+                            <div class="calendar calendar_small">
+                                <div class="calendar__title calendar__title_small"> October 2019 </div>
                                 <div class="calendar__wrapper">
                                     <div class="calendar__inner">
-                                        <span class="calendar__item calendar__item_day"> Mon </span>
-                                        <span class="calendar__item calendar__item_day"> Tue </span>
-                                        <span class="calendar__item calendar__item_day"> Wed </span>
-                                        <span class="calendar__item calendar__item_day"> Thu </span>
-                                        <span class="calendar__item calendar__item_day"> Fri </span>
-                                        <span class="calendar__item calendar__item_day"> Sat </span>
-                                        <span class="calendar__item calendar__item_day"> Sun </span>
+                                        <span
+                                            class="calendar__item calendar__item_small calendar__item_day calendar__item_day_small">
+                                            Mon
+                                        </span>
+                                        <span
+                                            class="calendar__item calendar__item_small calendar__item_day calendar__item_day_small">
+                                            Tue
+                                        </span>
+                                        <span
+                                            class="calendar__item calendar__item_small calendar__item_day calendar__item_day_small">
+                                            Wed
+                                        </span>
+                                        <span
+                                            class="calendar__item calendar__item_small calendar__item_day calendar__item_day_small">
+                                            Thu
+                                        </span>
+                                        <span
+                                            class="calendar__item calendar__item_small calendar__item_day calendar__item_day_small">
+                                            Fri
+                                        </span>
+                                        <span
+                                            class="calendar__item calendar__item_small calendar__item_day calendar__item_day_small">
+                                            Sat
+                                        </span>
+                                        <span
+                                            class="calendar__item calendar__item_small calendar__item_day calendar__item_day_small">
+                                            Sun
+                                        </span>
 
-                                        <div class="calendar__item"></div>
-                                        <div class="calendar__item"></div>
-                                        <div class="calendar__item"></div>
-                                        <div class="calendar__item"></div>
-                                        <div class="calendar__item"> 1 </div>
-                                        <div class="calendar__item"> 2 </div>
-                                        <div class="calendar__item"> 3 </div>
-                                        <div class="calendar__item"> 4 </div>
-                                        <div class="calendar__item"> 5 </div>
-                                        <div class="calendar__item"> 6 </div>
-                                        <div class="calendar__item"> 7 </div>
-                                        <div class="calendar__item"> 8 </div>
-                                        <div class="calendar__item"> 9 </div>
-                                        <div class="calendar__item"> 10 </div>
-                                        <div class="calendar__item"> 11 </div>
-                                        <div class="calendar__item"> 12 </div>
-                                        <div class="calendar__item"> 13 </div>
-                                        <div class="calendar__item"> 14 </div>
-                                        <div class="calendar__item"> 15 </div>
-                                        <div class="calendar__item"> 16 </div>
-                                        <div class="calendar__item"> 17 </div>
-                                        <div class="calendar__item calendar__item_start"> 18 </div>
-                                        <div class="calendar__item calendar__item_between"> 19 </div>
-                                        <div class="calendar__item calendar__item_between"> 20 </div>
-                                        <div class="calendar__item calendar__item_between"> 21 </div>
-                                        <div class="calendar__item calendar__item_between"> 22 </div>
-                                        <div class="calendar__item calendar__item_end"> 23 </div>
-                                        <div class="calendar__item"> 24 </div>
-                                        <div class="calendar__item"> 25 </div>
-                                        <div class="calendar__item"> 26 </div>
-                                        <div class="calendar__item"> 27 </div>
-                                        <div class="calendar__item"> 28 </div>
-                                        <div class="calendar__item"> 29 </div>
-                                        <div class="calendar__item"> 30 </div>
-                                        <div class="calendar__item"> 31 </div>
+                                        <div class="calendar__item calendar__item_small"></div>
+                                        <div class="calendar__item calendar__item_small"></div>
+                                        <div class="calendar__item calendar__item_small"></div>
+                                        <div class="calendar__item calendar__item_small"></div>
+                                        <div class="calendar__item calendar__item_small"> 1 </div>
+                                        <div class="calendar__item calendar__item_small"> 2 </div>
+                                        <div class="calendar__item calendar__item_small"> 3 </div>
+                                        <div class="calendar__item calendar__item_small"> 4 </div>
+                                        <div class="calendar__item calendar__item_small"> 5 </div>
+                                        <div class="calendar__item calendar__item_small"> 6 </div>
+                                        <div class="calendar__item calendar__item_small"> 7 </div>
+                                        <div class="calendar__item calendar__item_small"> 8 </div>
+                                        <div class="calendar__item calendar__item_small"> 9 </div>
+                                        <div class="calendar__item calendar__item_small"> 10 </div>
+                                        <div class="calendar__item calendar__item_small"> 11 </div>
+                                        <div class="calendar__item calendar__item_small"> 12 </div>
+                                        <div class="calendar__item calendar__item_small"> 13 </div>
+                                        <div class="calendar__item calendar__item_small"> 14 </div>
+                                        <div class="calendar__item calendar__item_small"> 15 </div>
+                                        <div class="calendar__item calendar__item_small"> 16 </div>
+                                        <div class="calendar__item calendar__item_small"> 17 </div>
+                                        <div class="calendar__item calendar__item_small calendar__item_start"> 18 </div>
+                                        <div class="calendar__item calendar__item_small calendar__item_between"> 19
+                                        </div>
+                                        <div class="calendar__item calendar__item_small calendar__item_between"> 20
+                                        </div>
+                                        <div class="calendar__item calendar__item_small calendar__item_between"> 21
+                                        </div>
+                                        <div class="calendar__item calendar__item_small calendar__item_between"> 22
+                                        </div>
+                                        <div class="calendar__item calendar__item_small calendar__item_end"> 23 </div>
+                                        <div class="calendar__item calendar__item_small"> 24 </div>
+                                        <div class="calendar__item calendar__item_small"> 25 </div>
+                                        <div class="calendar__item calendar__item_small"> 26 </div>
+                                        <div class="calendar__item calendar__item_small"> 27 </div>
+                                        <div class="calendar__item calendar__item_small"> 28 </div>
+                                        <div class="calendar__item calendar__item_small"> 29 </div>
+                                        <div class="calendar__item calendar__item_small"> 30 </div>
+                                        <div class="calendar__item calendar__item_small"> 31 </div>
                                     </div>
                                 </div>
                             </div>
@@ -124,9 +169,44 @@
                 </article>
 
                 <article class="card">
-                    <main class="card__body-frame">
+                    <main class="card__modal">
                         <div class="card__body-element">
-                            view
+                            <button id="modal-open" class="button button_primary">
+                                Open window
+                            </button>
+
+                            <div id="backboard" class="modal">
+                                <article id="modal" class="modal__window">
+                                    <header class="modal__title">
+                                        Modal title
+                                    </header>
+
+                                    <div id="modal-close" class="modal__close-button">
+
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.4714 3.52861C12.7318 3.78896 12.7318 4.21107 12.4714 4.47141L4.47141 12.4714C4.21107 12.7318 3.78896 12.7318 3.52861 12.4714C3.26826 12.2111 3.26826 11.789 3.52861 11.5286L11.5286 3.52861C11.789 3.26826 12.2111 3.26826 12.4714 3.52861Z"
+                                                fill="#495057" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.52861 3.52861C3.78896 3.26826 4.21107 3.26826 4.47141 3.52861L12.4714 11.5286C12.7318 11.789 12.7318 12.2111 12.4714 12.4714C12.2111 12.7318 11.789 12.7318 11.5286 12.4714L3.52861 4.47141C3.26826 4.21107 3.26826 3.78896 3.52861 3.52861Z"
+                                                fill="#495057" />
+                                        </svg>
+
+                                    </div>
+
+                                    <main class="modal__content">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                        officia consequat duis
+                                        enim velit
+                                        mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                        officia consequat duis
+                                        enim velit
+                                        mollit. Exercitation veniam consequat sunt nostrud amet.
+                                    </main>
+                                </article>
+                            </div>
                         </div>
                     </main>
                     <footer class="card__footer">Modal dialog</footer>
@@ -134,8 +214,8 @@
 
                 <article class="card">
                     <main class="card__body-frame">
-                        <div class="card__body-element">
-                            <div class="histogram">
+                        <div class="card__histogram">
+                            <div class="histogram histogram__card_size">
                                 <div class="histogram__container">
                                     <header class="histogram__header">
                                         <div class="histogram__header-stat-box">
@@ -199,7 +279,7 @@
 
                 <article class="card">
                     <main class="card__body-frame">
-                        <div class="card__body-element">
+                        <div class="card__avatar">
                             <div class="avatar">
                                 <img src="./06-lection4/01-avatar/public/avatar-200.jpg" class="avatar__img"
                                     alt="ivan ivanov">
