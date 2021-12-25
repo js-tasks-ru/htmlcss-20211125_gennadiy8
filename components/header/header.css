@@ -24,6 +24,22 @@
     color: var(--header-title);
 }
 
+.header__top-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__theme-checkbox-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.header__theme-checkbox {
+    flex-self: right;
+}
+
 .header__logo {
     height: 32px;
 }
