@@ -25,10 +25,8 @@
 
     .burger-menu[data-open] {
         transform: none;
-    }
 
-    .burger-menu[data-open] {
-        transform: none;
+        transition: transform 300ms linear;
     }
 
     .burger-menu__checkbox {
