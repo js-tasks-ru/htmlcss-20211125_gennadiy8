@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <!-- Страница с кнопкой переключения -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./toggler.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./toggler.css">
+</head>
+
+<body>
+    <label class="toggler">
+        <input type="checkbox" class="toggler__input">
+        <span class="toggler__state">
+            <span class="toggler__control">
+                <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill=""
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="12" fill="" />
+                </svg>
+            </span>
+            <span class="toggler__label">
+                toggler 1
+            </span>
+        </span>
+    </label>
+
+
+    <label class="toggler">
+        <input type="checkbox" class="toggler__input">
+        <span class="toggler__state">
+            <span class="toggler__control">
+                <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill=""
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="12" fill="" />
+                </svg>
+            </span>
+            <span class="toggler__label">
+                toggler 2
+            </span>
+        </span>
+    </label>
+
+    <label class="toggler">
+        <input type="checkbox" class="toggler__input" disabled>
+        <span class="toggler__state">
+            <span class="toggler__control">
+                <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill=""
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="12" fill="" />
+                </svg>
+            </span>
+            <span class="toggler__label">
+                Disabled
+            </span>
+        </span>
+    </label>
+</body>
+
 </html>
