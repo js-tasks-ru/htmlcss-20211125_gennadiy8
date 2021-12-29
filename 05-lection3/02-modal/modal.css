@@ -45,7 +45,11 @@
 
     color: var(--grey-4);
     padding: 3px;
+}
 
+.modal__close-button {
+    width: 24px;
+    height: 24px;
 }
 
 .modal__title {

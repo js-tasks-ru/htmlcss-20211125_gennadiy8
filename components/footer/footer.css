@@ -1,6 +1,6 @@
 .footer {
-    --footer-title: var(--black);
-    --footer-description: var(--black);
+    --footer-title: var(--text-primary);
+    --footer-description: var(--text-primary);
 
     font-family: Inter;
     font-style: normal;
@@ -8,7 +8,7 @@
     font-size: 16px;
     line-height: 24px;
 
-    background: var(--white);
+    background: var(--main-bg);
     padding: 71px 0 136px;
 }
 

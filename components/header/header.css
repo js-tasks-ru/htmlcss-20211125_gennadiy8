@@ -1,5 +1,5 @@
 .header {
-    --header-title: var(--black);
+    --header-title: var(--font-color);
 
     font-family: Inter;
     font-style: normal;
@@ -7,7 +7,7 @@
     font-size: 50px;
     line-height: 64px;
 
-    background: var(--white);
+    background: var(--main-bg);
     padding: 96px 0 77px;
 }
 
@@ -37,11 +37,12 @@
 }
 
 .header__theme-checkbox {
-    flex-self: right;
+
 }
 
 .header__logo {
     height: 32px;
+    fill: var(--header-title);
 }
 
 @media screen and (max-width: 1140px) {

@@ -1,3 +1,7 @@
+.tabs {
+    background-color: var(--main-bg);
+}
+
 .tabs__box {
     display: flex;
     flex-direction: column;
@@ -5,6 +9,8 @@
 
     max-width: var(--page-box-width);
     margin: 0 auto;
+
+    background-color: var(--main-bg);
 }
 
 .tabs__scroller {
@@ -42,5 +48,5 @@ input#\#elements-tab:checked ~ .tabs__scroller .tabs__item[for="#elements-tab"],
 input#\#containers-tab:checked ~ .tabs__scroller .tabs__item[for="#containers-tab"],
 input#\#template-tab:checked ~ .tabs__scroller .tabs__item[for="#template-tab"] {
     padding-bottom: 3px;
-    border-bottom: 5px solid var(--black);
+    border-bottom: 5px solid var(--dark-bg);
 }

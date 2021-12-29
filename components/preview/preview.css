@@ -1,5 +1,5 @@
 .preview {
-    --preview-fon: var(--white-1);
+    --preview-fon: var(--grey-bg);
     --preview-top-indent: 68px;
     --preview-bottom-indent: 15px;
     --preview-gap-between-cards: 30px;
