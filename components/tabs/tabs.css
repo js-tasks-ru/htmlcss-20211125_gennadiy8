@@ -43,10 +43,10 @@
     padding-bottom: 8px;
 }
 
-input#\#all-tab:checked ~ .tabs__scroller .tabs__item[for="#all-tab"],
-input#\#elements-tab:checked ~ .tabs__scroller .tabs__item[for="#elements-tab"],
-input#\#containers-tab:checked ~ .tabs__scroller .tabs__item[for="#containers-tab"],
-input#\#template-tab:checked ~ .tabs__scroller .tabs__item[for="#template-tab"] {
+#all-tab:checked ~ .tabs__scroller .tabs__item[for="#all-tab"],
+#elements-tab:checked ~ .tabs__scroller .tabs__item[for="#elements-tab"],
+#containers-tab:checked ~ .tabs__scroller .tabs__item[for="#containers-tab"],
+#template-tab:checked ~ .tabs__scroller .tabs__item[for="#template-tab"] {
     padding-bottom: 3px;
     border-bottom: 5px solid var(--dark-bg);
 }
