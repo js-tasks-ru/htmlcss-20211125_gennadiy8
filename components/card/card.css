@@ -12,7 +12,7 @@
     font-size: 21px;
     line-height: 25px;
 
-    background: var(--white);
+    background: var(--main-bg);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: var(--card-corner);
     width: var(--card-width);
@@ -23,14 +23,54 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    justify-content: center;
 }
 
-.card__body-element { 
+.card__histogram { 
+    padding: 0px 25px;
+}
+
+.card__avatar { 
+    padding: 58px 95px;
     margin: auto;
+}
+
+.card__calendar { 
+    padding: 32px 74px;
+    margin: auto;
+}
+
+.card__tooltip { 
+    padding: 159px 164px 0px 164px;
+}
+
+.card__modal { 
+    padding: 0px 25px;
 }
 
 .card__footer { 
     text-align: center;
-    color: var(--black);
+    color: var(--font-color);
     padding: 30px;
+}
+
+@media screen and (max-width: 1140px) {
+    .card {
+        --card-width: 164px;
+        --card-height: 210px;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .card__body-frame { 
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        border-bottom: 1px solid var(--grey-2);
+    }
 }

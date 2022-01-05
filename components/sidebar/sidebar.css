@@ -1,0 +1,66 @@
+.sidebar {
+    width: var(--sidebar-width);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sidebar__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sidebar__components-list-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: var(--black-1);
+}
+
+.sidebar__components-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebar__components-list-item {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: var(--black);
+}
+
+.sidebar__components-list-item_selected {
+    color: var(--orange);
+}
+
+.sidebar__link-to-main-page {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: var(--black);
+}
+
+@media screen and (max-width: 1140px) {
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar__nav {
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr; */ /* TODO: хотел расстянуть на весь экран по высоте, не получилось */
+        column-gap: 0;
+
+        padding: 32px 16px;
+    }
+}

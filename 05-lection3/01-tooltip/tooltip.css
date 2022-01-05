@@ -44,6 +44,8 @@
     cursor: pointer;
     width: 22px;
     height: 22px;
+
+    fill: var(--primary);
 }
 
 .tooltip__icon:hover ~ .tooltip__bubble {

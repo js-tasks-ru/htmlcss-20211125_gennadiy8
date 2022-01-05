@@ -13,7 +13,12 @@
 
 .accordion__summary {
     color: var(--summary);
-    display: block;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .accordion__content {
@@ -47,5 +52,23 @@
 }
 
 .accordion__item[open] {
-    height: 144px;
+    height: 100%;
+}
+
+.accordion__title {
+    flex-grow: 1;
+}
+
+.accordion__arrow {
+    position: absolute;
+    width: 19px;
+    height: 12px;
+
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+}
+
+.accordion__item[open] .accordion__arrow {
+    transform: rotate(-180deg);
 }

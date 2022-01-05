@@ -3,7 +3,9 @@
 
 :root {
     --white: #ffffff;
+    --white-1: #F9FAFC;
     --black: #212429;
+    --black-1: #000000;
     --pink: #F784AD;
     --purple-1: #7048E8;
     --purple-2: #5028C6;
@@ -14,6 +16,7 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --orange: #D84910;
 
     --error: var(--red);
     --success: var(--blue-1);
@@ -26,6 +29,31 @@
     --secondary-hovered: var(--purple-2);
 
     --page-box-width: 1110px;
+
+    --main-bg: var(--light-bg);
+    --font-color: var(--text-primary);
+    --dark-bg: var(--black);
+    --white-bg: var(--white);
+    --light-bg: var(--white);
+    --grey-bg: var(--grey-1);
+    --card-bg: var(--white);
+    --text-primary: var(--black);
+    --active-text-color: var(--text-primary);
+    --input-text-color: var(--grey-4);
+
+}
+
+:root[data-theme-dark] {
+    --main-bg: var(--black);
+    --font-color: #ffffff75;
+    --dark-bg: var(--grey-1);
+    --white-bg: var(--black);
+    --light-bg: var(--grey-4);
+    --grey-bg: var(--grey-4);
+    --card-bg: var(--black);
+    --text-primary: var(--white);
+    --active-text-color: var(--grey-2);
+    --input-text-color: var(--font-color);
 }
 
 * {
